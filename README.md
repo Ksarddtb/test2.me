@@ -21,8 +21,8 @@
 <pre>
     <code>server {
         listen 80;
-        server_name <mark>server_domain_or_IP</mark>;
-        root /var/www/<mark>travellist</mark>/public;
+        test2.me <mark>127.0.0.1</mark>;
+        root /var/www/<mark>test.me</mark>/public;
 
         add_header X-Frame-Options "SAMEORIGIN";
         add_header X-XSS-Protection "1; mode=block";
