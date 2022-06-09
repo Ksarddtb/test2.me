@@ -18,7 +18,7 @@ class tableListCollection extends ResourceCollection
         return [
             'data' => $this->collection,
             'links' => [
-                'self' => $request->url(),
+                // 'self' => $request->url(),
             ],
         ];
     }

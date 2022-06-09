@@ -22,6 +22,6 @@ class IndexController extends Controller
     }
     public function test()
     {
-        return new tableListCollection(\App\Models\TableList::default()->paginate(5));
+        return new tableListCollection(\App\Models\TableList::default()->paginate(15));
     }
 }
