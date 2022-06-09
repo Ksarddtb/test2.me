@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('/test', [IndexController::class, 'test'])->name('test');
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->group(function () {
     Route::get('/dashboard', [IndexController::class, 'index'])->name('dashboard');
     Route::get('/generate', [IndexController::class, 'generate'])->name('generate');

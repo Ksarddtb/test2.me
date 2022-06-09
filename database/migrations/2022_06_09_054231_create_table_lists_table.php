@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('table_lists', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('parent_id')->nullable();
+            $table->string('style')->nullable();
+            $table->string('text');
             $table->timestamps();
         });
     }
